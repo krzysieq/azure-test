@@ -7,7 +7,7 @@
     <?php require_once("nav.php"); ?>
 <h1>Search</h1>
 <form method="post" action="search.php" enctype="multipart/form-data" >
-      Query  <input type="text" name="query" id="query"/></br>
+      Query  <input type="text" name="query" id="query" value="<?php echo $_POST['query']; ?>"/></br>
       <input type="submit" name="submit" value="Submit" />
 </form>
 <?php
