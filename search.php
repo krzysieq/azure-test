@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <?php require_once("nav.php"); ?>
 <h1>Search</h1>
 <form method="post" action="search.php" enctype="multipart/form-data" >
       Query  <input type="text" name="query" id="query"/></br>

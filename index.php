@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <?php require_once("nav.php"); ?>
 <h1>Register here!</h1>
 <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
 <form method="post" action="index.php" enctype="multipart/form-data" >
@@ -14,7 +15,7 @@
 </form>
 <?php
     require_once("db.php");
-    
+
     // Insert registration info
     if(!empty($_POST)) {
     try {
